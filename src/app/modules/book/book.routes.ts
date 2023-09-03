@@ -10,24 +10,20 @@ router.post(
   BookController.createBook
 );
 router.get('/', BookController.getAllBook);
-// router.get(
-//   '/:id',
+router.get(
+  '/:id',
 
-//   BookController.getSingleBook
-// );
-// router.get(
-//   '/:id/category',
+  BookController.getSingleBook
+);
+router.get(
+  '/:id/category',
 
-//   BookController.getBooksByCategoryId
-// );
-// router.patch(
-//   '/:id',
-//   auth(ENUM_USER_ROLE.ADMIN),
-//   BookController.updateSingleBook
-// );
-// router.delete(
-//   '/:id',
-//   auth(ENUM_USER_ROLE.ADMIN),
-//   BookController.deleteSingleBook
-// );
+  BookController.getBooksByCategoryId
+);
+router.patch('/:id', BookController.updateBook);
+router.delete(
+  '/:id',
+
+  BookController.deleteBook
+);
 export const BookRoutes = router;

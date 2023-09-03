@@ -29,6 +29,16 @@
             "date": 1693731861901,
             "name": "D:\\Next Level Journey\\Mission - 6\\Assignment - 8\\book-catalog-backend-assignment\\logs\\winston\\errors\\phu-2023-03-09-15-error.log",
             "hash": "bb57939b7259ef95800c622c7b44553ebb01a9c55b5d7ff231616e2de4d9c405"
+        },
+        {
+            "date": 1693736098845,
+            "name": "D:\\Next Level Journey\\Mission - 6\\Assignment - 8\\book-catalog-backend-assignment\\logs\\winston\\errors\\phu-2023-03-09-16-error.log",
+            "hash": "2585522593f60093ccc36b781bb603563a52f2804d090203ed30dbe63750c81d"
+        },
+        {
+            "date": 1693740776284,
+            "name": "D:\\Next Level Journey\\Mission - 6\\Assignment - 8\\book-catalog-backend-assignment\\logs\\winston\\errors\\phu-2023-03-09-17-error.log",
+            "hash": "fb9149114b2dc5a4d4b68653190e9bf68141cd99bafe76f3d41f941d4ff921b6"
         }
     ],
     "hashType": "sha256"

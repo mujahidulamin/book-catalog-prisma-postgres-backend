@@ -103,11 +103,87 @@ const getAllBook = async (
   };
 };
 
+const getBooksByCategoryId = async (
+  id: string,
+  paginationOptions: IPaginationOptions
+): Promise<IGenericResponse<Book[]>> => {
+  const { size, page, skip } =
+    paginationHelpers.calculatePagination(paginationOptions);
+
+  const result = await prisma.book.findMany({
+    where: {
+      categoryId: id,
+    },
+    skip,
+    take: size,
+    orderBy:
+      paginationOptions.sortBy && paginationOptions.sortOrder
+        ? { [paginationOptions.sortBy]: paginationOptions.sortOrder }
+        : { createdAt: 'desc' },
+    include: {
+      category: true,
+    },
+  });
+  // const total = await prisma.book.count();
+  const total = await prisma.book.count({
+    where: {
+      categoryId: id,
+    },
+  });
+  const totalPage = Math.ceil(total / size);
+  return {
+    meta: {
+      total,
+      page,
+      size,
+      totalPage,
+    },
+    data: result,
+  };
+};
+
+const getSingleBook = async (id: string) => {
+  const Book = await prisma.book.findUnique({
+    where: {
+      id,
+    },
+    include: {
+      category: true,
+    },
+  });
+  return Book;
+};
+
+const updateBook = async (id: string, payload: Partial<Book>) => {
+  const Book = await prisma.book.update({
+    where: {
+      id,
+    },
+    data: payload,
+    include: {
+      category: true,
+    },
+  });
+  return Book;
+};
+
+const deleteBook = async (id: string) => {
+  const Book = await prisma.book.delete({
+    where: {
+      id,
+    },
+    include: {
+      category: true,
+    },
+  });
+  return Book;
+};
+
 export const BookService = {
   createBook,
   getAllBook,
-  // getSingleBook,
-  // getBooksByCategoryId,
-  // updateSingleBook,
-  // deleteSingleBook,
+  getBooksByCategoryId,
+  getSingleBook,
+  updateBook,
+  deleteBook,
 };

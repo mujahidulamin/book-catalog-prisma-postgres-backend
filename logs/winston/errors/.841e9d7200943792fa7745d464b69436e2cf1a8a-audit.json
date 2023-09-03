@@ -14,6 +14,11 @@
             "date": 1693722499965,
             "name": "D:\\Next Level Journey\\Mission - 6\\Assignment - 8\\book-catalog-backend-assignment\\logs\\winston\\errors\\phu-2023-03-09-12-error.log",
             "hash": "4a2172539912e75bc929522026708d1d22640460b896732c18702f606f4579ed"
+        },
+        {
+            "date": 1693724831537,
+            "name": "D:\\Next Level Journey\\Mission - 6\\Assignment - 8\\book-catalog-backend-assignment\\logs\\winston\\errors\\phu-2023-03-09-13-error.log",
+            "hash": "f5ea1992aca64c08a2403db85e9b772d5e771326109a3ec153840a5b0b648dad"
         }
     ],
     "hashType": "sha256"

@@ -1,2 +1,10 @@
 Sun Sep 03 2023 13:28:49 } [PH] error: 🐱‍🏍 globalErrorHandler ~~ You are not authorized
 Sun Sep 03 2023 13:32:34 } [PH] error: 🐱‍🏍 globalErrorHandler ~~ You are not authorized
+Sun Sep 03 2023 13:33:50 } [PH] error: 🐱‍🏍 globalErrorHandler ~~ You are not authorized
+Sun Sep 03 2023 13:34:20 } [PH] error: 🐱‍🏍 globalErrorHandler ~~ You are not authorized
+Sun Sep 03 2023 13:35:16 } [PH] error: 🐱‍🏍 globalErrorHandler ~~ 
+Invalid `prisma.user.delete()` invocation:
+
+
+An operation failed because it depends on one or more records that were required but not found. Record to delete does not exist.
+Sun Sep 03 2023 13:35:26 } [PH] error: 🐱‍🏍 globalErrorHandler ~~ You are not authorized

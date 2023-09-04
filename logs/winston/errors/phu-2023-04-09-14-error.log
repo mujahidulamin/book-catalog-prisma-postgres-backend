@@ -1,0 +1,129 @@
+Mon Sep 04 2023 14:0:35 } [PH] error: 🐱‍🏍 globalErrorHandler ~~ Cannot read properties of undefined (reading 'orderedBooks')
+Mon Sep 04 2023 14:4:12 } [PH] error: 🐱‍🏍 globalErrorHandler ~~ Cannot destructure property 'orderedBooks' of 'payload' as it is undefined.
+Mon Sep 04 2023 14:5:37 } [PH] error: 🐱‍🏍 globalErrorHandler ~~ 
+Invalid `prisma.order.create()` invocation:
+
+{
+  data: {
+    orderedBooks: [
+      {
+        bookId: "efb2949f-8f85-42f6-a9ce-8c177814e2ec",
+        quantity: 3
+      },
+      {
+        bookId: "c9b2d566-1d8a-4fe1-8d15-07ed4f7c5dc9",
+        quantity: 2
+      }
+    ],
+    userId: undefined,
++   user: {
++     create: UserCreateWithoutOrdersInput | UserUncheckedCreateWithoutOrdersInput,
++     connectOrCreate: UserCreateOrConnectWithoutOrdersInput,
++     connect: UserWhereUniqueInput
++   }
+  }
+}
+
+Argument `user` is missing.
+Mon Sep 04 2023 14:11:6 } [PH] error: 🐱‍🏍 globalErrorHandler ~~ 
+Invalid `prisma.order.create()` invocation:
+
+{
+  data: {
+    orderedBooks: [
+      {
+        bookId: "efb2949f-8f85-42f6-a9ce-8c177814e2ec",
+        quantity: 3
+      },
+      {
+        bookId: "c9b2d566-1d8a-4fe1-8d15-07ed4f7c5dc9",
+        quantity: 2
+      }
+    ],
+    userId: undefined,
++   user: {
++     create: UserCreateWithoutOrdersInput | UserUncheckedCreateWithoutOrdersInput,
++     connectOrCreate: UserCreateOrConnectWithoutOrdersInput,
++     connect: UserWhereUniqueInput
++   }
+  }
+}
+
+Argument `user` is missing.
+Mon Sep 04 2023 14:12:17 } [PH] error: 🐱‍🏍 globalErrorHandler ~~ 
+Invalid `prisma.order.create()` invocation:
+
+{
+  data: {
+    orderedBooks: [
+      {
+        bookId: "ecc79491-2e06-4975-99f5-945e2870465c",
+        quantity: 3
+      },
+      {
+        bookId: "60fc3b7e-ecc7-42af-a47a-e5236a5f1e91",
+        quantity: 2
+      }
+    ],
+    userId: undefined,
++   user: {
++     create: UserCreateWithoutOrdersInput | UserUncheckedCreateWithoutOrdersInput,
++     connectOrCreate: UserCreateOrConnectWithoutOrdersInput,
++     connect: UserWhereUniqueInput
++   }
+  }
+}
+
+Argument `user` is missing.
+Mon Sep 04 2023 14:14:51 } [PH] error: 🐱‍🏍 globalErrorHandler ~~ 
+Invalid `prisma.order.create()` invocation:
+
+{
+  data: {
+    orderedBooks: [
+      {
+        bookId: "ecc79491-2e06-4975-99f5-945e2870465c",
+        quantity: 3
+      },
+      {
+        bookId: "60fc3b7e-ecc7-42af-a47a-e5236a5f1e91",
+        quantity: 2
+      }
+    ],
+    userId: undefined,
++   user: {
++     create: UserCreateWithoutOrdersInput | UserUncheckedCreateWithoutOrdersInput,
++     connectOrCreate: UserCreateOrConnectWithoutOrdersInput,
++     connect: UserWhereUniqueInput
++   }
+  }
+}
+
+Argument `user` is missing.
+Mon Sep 04 2023 14:16:19 } [PH] error: 🐱‍🏍 globalErrorHandler ~~ 
+Invalid `prisma.order.create()` invocation:
+
+{
+  data: {
+    orderedBooks: [
+      {
+        bookId: "ecc79491-2e06-4975-99f5-945e2870465c",
+        quantity: 3
+      },
+      {
+        bookId: "60fc3b7e-ecc7-42af-a47a-e5236a5f1e91",
+        quantity: 2
+      }
+    ],
+    id: undefined,
++   user: {
++     create: UserCreateWithoutOrdersInput | UserUncheckedCreateWithoutOrdersInput,
++     connectOrCreate: UserCreateOrConnectWithoutOrdersInput,
++     connect: UserWhereUniqueInput
++   }
+  }
+}
+
+Argument `user` is missing.
+Mon Sep 04 2023 14:45:20 } [PH] error: 🐱‍🏍 globalErrorHandler ~~ Cannot destructure property 'id' of 'user' as it is undefined.
+Mon Sep 04 2023 14:52:20 } [PH] error: 🐱‍🏍 globalErrorHandler ~~ You are not authorized

@@ -1,0 +1,4 @@
+Mon Sep 04 2023 13:53:36 } [PH] error: 🐱‍🏍 globalErrorHandler ~~ Cannot destructure property 'id' of 'user' as it is undefined.
+Mon Sep 04 2023 13:55:42 } [PH] error: 🐱‍🏍 globalErrorHandler ~~ Cannot destructure property 'id' of 'user' as it is undefined.
+Mon Sep 04 2023 13:55:45 } [PH] error: 🐱‍🏍 globalErrorHandler ~~ Cannot destructure property 'id' of 'user' as it is undefined.
+Mon Sep 04 2023 13:55:55 } [PH] error: 🐱‍🏍 globalErrorHandler ~~ Cannot destructure property 'id' of 'user' as it is undefined.

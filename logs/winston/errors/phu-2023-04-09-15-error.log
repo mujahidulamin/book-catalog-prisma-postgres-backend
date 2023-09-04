@@ -3,3 +3,62 @@ Mon Sep 04 2023 15:11:10 } [PH] error: 🐱‍🏍 globalErrorHandler ~~ You are
 Mon Sep 04 2023 15:11:42 } [PH] error: 🐱‍🏍 globalErrorHandler ~~ You are not allowed to access this data.
 Mon Sep 04 2023 15:26:3 } [PH] error: 🐱‍🏍 globalErrorHandler ~~ You are not allowed to access this data.
 Mon Sep 04 2023 15:27:1 } [PH] error: 🐱‍🏍 globalErrorHandler ~~ You are not allowed to access this data.
+Mon Sep 04 2023 15:38:16 } [PH] error: 🐱‍🏍 globalErrorHandler ~~ 
+Invalid `prisma.user.findUnique()` invocation:
+
+{
+  where: {
+    id: undefined,
+?   email?: String,
+?   AND?: UserWhereInput | UserWhereInput[],
+?   OR?: UserWhereInput[],
+?   NOT?: UserWhereInput | UserWhereInput[],
+?   name?: StringFilter | String,
+?   password?: StringFilter | String,
+?   role?: EnumUserRoleFilter | UserRole,
+?   contactNo?: StringFilter | String,
+?   address?: StringFilter | String,
+?   profileImg?: StringFilter | String,
+?   createdAt?: DateTimeFilter | DateTime,
+?   updatedAt?: DateTimeFilter | DateTime,
+?   reviewAndRatings?: ReviewAndRatingListRelationFilter,
+?   orders?: OrderListRelationFilter
+  },
+  select: {
+    id: true,
+    name: true,
+    email: true,
+    password: false,
+    role: true,
+    contactNo: true,
+    address: true,
+    profileImg: true
+  }
+}
+
+Argument `where` of type UserWhereUniqueInput needs at least one of `id` or `email` arguments. Available options are listed in green.
+Mon Sep 04 2023 15:41:43 } [PH] error: 🐱‍🏍 globalErrorHandler ~~ 
+Invalid `prisma.user.findUnique()` invocation:
+
+{
+  where: {
+    id: "c18cd299-d530-405a-9e9e-defc0d2c5fed"
+  },
+  select: {
+?   id?: true,
+?   name?: true,
+?   email?: true,
+?   password?: true,
+?   role?: true,
+?   contactNo?: true,
+?   address?: true,
+?   profileImg?: true,
+?   createdAt?: true,
+?   updatedAt?: true,
+?   reviewAndRatings?: true,
+?   orders?: true,
+?   _count?: true
+  }
+}
+
+The `select` statement for type User needs at least one truthy value.

@@ -3,11 +3,15 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
     return (mod && mod.__esModule) ? mod : { "default": mod };
 };
 Object.defineProperty(exports, "__esModule", { value: true });
+/* eslint-disable no-unused-vars */
+/* eslint-disable no-unused-expressions */
+/* eslint-disable @typescript-eslint/no-unused-vars */
+const client_1 = require("@prisma/client");
+const zod_1 = require("zod");
 const config_1 = __importDefault(require("../../config"));
 const ApiError_1 = __importDefault(require("../../errors/ApiError"));
+const handleClientError_1 = __importDefault(require("../../errors/handleClientError"));
 const handleValidationError_1 = __importDefault(require("../../errors/handleValidationError"));
-const zod_1 = require("zod");
-const handleCastError_1 = __importDefault(require("../../errors/handleCastError"));
 const handleZodError_1 = __importDefault(require("../../errors/handleZodError"));
 const globalErrorHandler = (error, req, res, next) => {
     config_1.default.env === 'development'
@@ -16,7 +20,7 @@ const globalErrorHandler = (error, req, res, next) => {
     let statusCode = 500;
     let message = 'Something went wrong !';
     let errorMessages = [];
-    if ((error === null || error === void 0 ? void 0 : error.name) === 'ValidationError') {
+    if (error instanceof client_1.Prisma.PrismaClientValidationError) {
         const simplifiedError = (0, handleValidationError_1.default)(error);
         statusCode = simplifiedError.statusCode;
         message = simplifiedError.message;
@@ -28,8 +32,8 @@ const globalErrorHandler = (error, req, res, next) => {
         message = simplifiedError.message;
         errorMessages = simplifiedError.errorMessages;
     }
-    else if ((error === null || error === void 0 ? void 0 : error.name) === 'CastError') {
-        const simplifiedError = (0, handleCastError_1.default)(error);
+    else if (error instanceof client_1.Prisma.PrismaClientKnownRequestError) {
+        const simplifiedError = (0, handleClientError_1.default)(error);
         statusCode = simplifiedError.statusCode;
         message = simplifiedError.message;
         errorMessages = simplifiedError.errorMessages;

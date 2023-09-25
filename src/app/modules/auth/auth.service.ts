@@ -78,6 +78,7 @@ const signInUser = async (payload: ILoginUser): Promise<ILoginUserResponse> => {
   return {
     token,
   };
+  
 };
 export const AuthService = {
   signUpUser,

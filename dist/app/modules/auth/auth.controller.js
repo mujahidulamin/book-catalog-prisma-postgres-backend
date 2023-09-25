@@ -17,6 +17,7 @@ const http_status_1 = __importDefault(require("http-status"));
 const catchAsync_1 = __importDefault(require("../../../shared/catchAsync"));
 const sendResponse_1 = __importDefault(require("../../../shared/sendResponse"));
 const auth_service_1 = require("./auth.service");
+const sendTokenResponse_1 = __importDefault(require("../../../shared/sendTokenResponse"));
 // import config from '../../../config';
 const signUpUser = (0, catchAsync_1.default)((req, res) => __awaiter(void 0, void 0, void 0, function* () {
     const result = yield auth_service_1.AuthService.signUpUser(req.body);
@@ -29,11 +30,11 @@ const signUpUser = (0, catchAsync_1.default)((req, res) => __awaiter(void 0, voi
 }));
 const signInUser = (0, catchAsync_1.default)((req, res) => __awaiter(void 0, void 0, void 0, function* () {
     const result = yield auth_service_1.AuthService.signInUser(req.body);
-    (0, sendResponse_1.default)(res, {
+    (0, sendTokenResponse_1.default)(res, {
         success: true,
         statusCode: http_status_1.default.OK,
         message: 'User logged in successfully',
-        data: result,
+        token: result.token,
     });
 }));
 exports.AuthController = {

@@ -94,9 +94,9 @@ const getAllBook = async (
   const totalPage = Math.ceil(total / size);
   return {
     meta: {
-      total,
       page,
       size,
+      total,
       totalPage,
     },
     data: result,
@@ -133,9 +133,9 @@ const getBooksByCategoryId = async (
   const totalPage = Math.ceil(total / size);
   return {
     meta: {
-      total,
       page,
       size,
+      total,
       totalPage,
     },
     data: result,

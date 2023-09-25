@@ -98,9 +98,9 @@ const getAllBook = (filters, paginationOptions) => __awaiter(void 0, void 0, voi
     const totalPage = Math.ceil(total / size);
     return {
         meta: {
-            total,
             page,
             size,
+            total,
             totalPage,
         },
         data: result,
@@ -130,9 +130,9 @@ const getBooksByCategoryId = (id, paginationOptions) => __awaiter(void 0, void 0
     const totalPage = Math.ceil(total / size);
     return {
         meta: {
-            total,
             page,
             size,
+            total,
             totalPage,
         },
         data: result,

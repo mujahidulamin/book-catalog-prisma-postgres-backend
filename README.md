@@ -19,7 +19,7 @@
 ## Category
 
 - https://book-catalog-backend-with-prisma-prostgres.vercel.app/api/v1/categories/create-category (POST)
-- https://book-catalog-backend-with-prisma-prostgres.vercel.app/api/v1/books (GET)
+- https://book-catalog-backend-with-prisma-prostgres.vercel.app/api/v1/categories (GET)
 - https://book-catalog-backend-with-prisma-prostgres.vercel.app/api/v1/categories/82383be3-a597-4679-bf10-9f4831743c0d (Single GET)
 - https://book-catalog-backend-with-prisma-prostgres.vercel.app/api/v1/categories/82383be3-a597-4679-bf10-9f4831743c0d (PATCH)
 - https://book-catalog-backend-with-prisma-prostgres.vercel.app/api/v1/categories/82383be3-a597-4679-bf10-9f4831743c0d (DELETE)
@@ -27,7 +27,7 @@
 ## Books
 
 - https://book-catalog-backend-with-prisma-prostgres.vercel.app/api/v1/books/create-book (POST)
-- https://book-catalog-backend-with-prisma-prostgres.vercel.app/api/v1/categories (GET)
+- https://book-catalog-backend-with-prisma-prostgres.vercel.app/api/v1/books (GET)
 - https://book-catalog-backend-with-prisma-prostgres.vercel.app/api/v1/books/82383be3-a597-4679-bf10-9f4831743c0d/category (GET)
 - https://book-catalog-backend-with-prisma-prostgres.vercel.app/api/v1/books/60c28ad7-09f1-459f-af34-7828f127cb8e (SINGLE GET)
 - https://book-catalog-backend-with-prisma-prostgres.vercel.app/api/v1/books/60c28ad7-09f1-459f-af34-7828f127cb8e (PATCH)
